@@ -84,7 +84,7 @@ module.exports = {
         if (!mentionRegex.test(message.content)) return;
         let reply = `Hi there, ${
             message.author
-        }\nI am Welcome-Bot\nMy prefix is "${guildDB.prefix}"${
+        }\nI am Straw\nMy prefix is "${guildDB.prefix}"${
             message.guild ? " in this server." : ""
         }\nSend \`${guildDB.prefix}help\` to get help`;
         if (message.guild) {
