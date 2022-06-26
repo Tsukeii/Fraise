@@ -42,13 +42,13 @@ module.exports = class CMD extends Command {
                 t("misc:datelaunched"),
                 `\`\`\`${moment(timestamp).format("LLLL")}\`\`\``
             );
-        message.channel.send({
-            embeds: [embed],
-        });
-        const embed = new Embed({
+        const embed1 = new Embed({
             color: "green",
             timestamp: true,
         })
             .setImage(`https://media.discordapp.net/attachments/990660022889480192/990660161725136987/941891.png`);
+        message.channel.send({
+            embeds: [ embed, embed1 ],
+        });
     }
 };
