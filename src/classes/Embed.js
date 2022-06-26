@@ -17,25 +17,25 @@ module.exports = class Embed extends MessageEmbed {
         } = opts;
         switch (color?.toLowerCase?.()) {
             case "error":
-                color = "#ff3333";
+                color = "#303136";
                 break;
             case "red":
-                color = "#ff0000";
+                color = "#303136";
                 break;
             case "success":
-                color = "#33ddff";
+                color = "#303136";
                 break;
             case "blue":
-                color = "#0091fc";
+                color = "#303136";
                 break;
             case "green":
-                color = "#00ff00";
+                color = "#303136";
                 break;
             case "lightblue":
-                color = "#76b3fc";
+                color = "#303136";
                 break;
             case "pink":
-                color = "#da70d6";
+                color = "#303136";
                 break;
             default:
                 if (!color) color = "#303136";
