@@ -100,25 +100,19 @@ module.exports = class CMD extends Command {
                     )}`
                 )
                 .addField(
-                    "🧾 Bot lists:",
-                    "> [discordextremelist.xyz](https://discordextremelist.xyz/en-US/bots/welcome-bot)\n" +
-                        "> [disbotlist.xyz](https://disbotlist.xyz/bot/848459799783669790)\n" +
-                        "> [dblist.xyz](https://dblist.xyz/bot/848459799783669790)\n" +
-                        "> [discordservices.net](https://discordservices.net/bot/848459799783669790)\n" +
-                        "> [discordlist.space](https://discordlist.space/bot/848459799783669790)\n" +
-                        "> [discord.boats](https://discord.boats/bot/848459799783669790)\n" +
-                        "> [top.gg](https://top.gg/bot/848459799783669790)\n",
+                    "🧾 Voter pour Straw:",
+                    "> [top.gg](https://top.gg/bot/848459799783669790)\n",
                     inline
                 );
         }
         embed
             .addField(
-                "🔗 Useful links:",
+                "🔗 Liens Utiles:",
                 `> [Support server](${message.client.config.supportGuildInvite})\n`,
                 inline
             )
             .setImage(
-                "https://welcome-bot.github.io/assets/img/graphics3-standard.gif"
+                ""
             );
         switch (args[0]) {
             case "--dm":
