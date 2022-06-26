@@ -93,9 +93,9 @@ module.exports = class CMD extends Command {
             embed
                 .addField(
                     `${message.client.customEmojis.owner} Bot owners and staff`,
-                    `**Welcome-Bot owners:** ${this.client.ownersTags.join(
+                    `**Straw owners:** ${this.client.ownersTags.join(
                         ", "
-                    )}\n**Welcome-Bot staff:** ${this.client.staffTags.join(
+                    )}\n**Straw staff:** ${this.client.staffTags.join(
                         ", "
                     )}`
                 )
@@ -114,10 +114,7 @@ module.exports = class CMD extends Command {
         embed
             .addField(
                 "🔗 Useful links:",
-                `> [Support server](${message.client.config.supportGuildInvite})\n` +
-                    "> [GitHub](https://github.com/Welcome-Bot/welcome-bot/)\n" +
-                    "> [Privacy policy](https://welcome-bot.github.io/docs/privacy-policy.html) and [Terms of service](https://welcome-bot.github.io/docs/terms.html)\n" +
-                    "> [Documentation](https://welcome-bot.github.io/docs)",
+                `> [Support server](${message.client.config.supportGuildInvite})\n`,
                 inline
             )
             .setImage(
