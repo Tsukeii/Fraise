@@ -48,7 +48,7 @@ module.exports = class CMD extends Command {
         })
             .setImage(`https://media.discordapp.net/attachments/990660022889480192/990660161725136987/941891.png`);
         message.channel.send({
-            embeds: [ embed, embed1 ],
+            embeds: [ embed1, embed ],
         });
     }
 };
