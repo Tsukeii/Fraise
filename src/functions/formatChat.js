@@ -6,8 +6,8 @@
 
 module.exports = (data) => {
     return data
-        .replace("Atom", `Welcome-Bot`) //name
-        .replace("Acobot Team", `Welcome-Bot Team`) //developer
+        .replace("Atom", `Straw`) //name
+        .replace("Acobot Team", `Straw Team`) //developer
         .replace("female chatbot", `male chatbot`) //gender
         .replace("Christian", `Christian`) //religion
         .replace("Tom Hanks", `Tom Hanks`) //favourite actor
