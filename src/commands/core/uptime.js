@@ -44,7 +44,7 @@ module.exports = class CMD extends Command {
             );
         const embed1 = new Embed({
             color: "green",
-            timestamp: true,
+            timestamp: false,
         })
             .setImage(`https://media.discordapp.net/attachments/990660022889480192/990660161725136987/941891.png`);
         message.channel.send({
