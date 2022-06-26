@@ -38,7 +38,7 @@ module.exports = class Embed extends MessageEmbed {
                 color = "#da70d6";
                 break;
             default:
-                if (!color) color = "RANDOM";
+                if (!color) color = "#303136";
                 break;
         }
         this.setColor(color);
