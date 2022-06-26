@@ -7,28 +7,28 @@ require("dotenv").config();
 //const { Permissions } = require("discord.js");
 const defaultPerms = require("./data/defaultPerms");
 module.exports = {
-    botGuildId: "836854115526770708",
-    newsChannelId: "847459283876577360",
-    logsChannelId: "855331801635749888",
-    votesChannelId: "867925583777103872",
-    suggestionLogsChannelId: "862126837110800414",
-    errorLogsChannelId: "878431491581964328",
-    loginLogsChannelId: "880122897472036894",
+    botGuildId: "681797849926860810",
+    newsChannelId: "966739100298281090",
+    logsChannelId: "966739100298281090",
+    votesChannelId: "966739100298281090",
+    suggestionLogsChannelId: "966739100298281090",
+    errorLogsChannelId: "966739100298281090",
+    loginLogsChannelId: "966739100298281090",
     defaultPrefix: process.env.BOT_PREFIX ?? "w/",
     votersRole: "852512614789808138",
     roles: {
         voteReminder: "886776592666353724",
     },
     channels: {
-        general: "836854115526770711",
+        general: "988200748397527160",
     },
-    reportsChannelId: "869017115385024543",
+    reportsChannelId: "945880722877612072",
     ownerIds: [
-        "815204465937481749" /*PuneetGopinath#0001*/,
-        "693754859014324295" /*abhijoshi2k#6842*/,
+        "499447456678019072" /*Tsu#0010*/,
+        "683464613790220288" /*Keii#0001*/,
     ],
     dbCacheRefreshInterval: 1 * 60 * 60 * 1000, //refresh db cache every hour
-    staffIds: ["772421156787191818" /*Kirito#1555*/],
+    staffIds: ["499447456678019072" /*Masha#1000*/],
     dashboard: {
         port: process.env.PORT || 8000,
         secret: process.env.SESS_SECRET ?? null,
@@ -58,7 +58,7 @@ module.exports = {
             msgLength: 50, //max goodbye msg length
         },
     },
-    supportGuildInvite: "https://discord.gg/vEUnKUNNRB",
+    supportGuildInvite: "https://discord.gg/MvSVmy3vjm",
     supportGuildInviteReal: (client) => {
         let invite = client.config.supportGuildInvite;
         try {
