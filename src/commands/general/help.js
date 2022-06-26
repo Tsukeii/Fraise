@@ -60,11 +60,11 @@ module.exports = class CMD extends Command {
                 );
             });
             pages[0].setDescription(t("cmds:help.all"));
-            pages[0].addField("No. of Commands", `${commands.size}`);
-            pages[0].addField("No. of categories", `${categories.length}`);
+            pages[0].addField("Nombres de Commandes", `${commands.size}`);
+            pages[0].addField("Nombres de categories", `${categories.length}`);
             pages[0].addField(
-                "Get help for specific command:",
-                `Send \`${guildDB.prefix}help (command name)\` to get info on a specific command!`
+                "Obtenir de l'aide pour une commande spécifique :",
+                `Tapez \`${guildDB.prefix}help (command name)\` pour obtenir des informations sur une commande spécifique !`
             );
             pages[0].addField(
                 "Commands",
@@ -129,12 +129,12 @@ module.exports = class CMD extends Command {
                 pages[0].addField("Aliases: ", command.aliases.join(", "));
             if (command.memberPerms && command.memberPerms.length > 0)
                 pages[0].addField(
-                    "User Permissions",
-                    `You need ${beautifyPerms(
+                    "Permissions Utilisateur",
+                    `Tu as besoin de ${beautifyPerms(
                         command.memberPerms,
                         this.client.allPerms,
                         t
-                    ).join(", ")} permission(s) to execute this command.`
+                    ).join(", ")} permission(s) pour executer cet commande`
                 );
             if (command.subcommands) {
                 const subcommands = [];
@@ -154,7 +154,7 @@ module.exports = class CMD extends Command {
 
             pages[0].addField(
                 "Cooldown:",
-                `${command.cooldown || 3} second(s)`
+                `${command.cooldown || 3} seconde(s)`
             );
         } else if (category) {
             const commandsInCat = [];
@@ -165,7 +165,7 @@ module.exports = class CMD extends Command {
                     );
             });
             pages[0].addField(
-                "Commands in this category",
+                "Commandes dans la categorie",
                 `\`\`\`\n• ${commandsInCat.join("\n• ")}\n\`\`\``
             );
         }
