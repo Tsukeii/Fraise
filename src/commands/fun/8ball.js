@@ -32,7 +32,6 @@ module.exports = class CMD extends Command {
         const embed = new Embed()
             .setTitle(text)
             .setDescription(`**${res.response}**`)
-            .setImage(res.url);
         message.reply({ embeds: [embed] });
     }
 };
