@@ -31,7 +31,7 @@ module.exports = class CMD extends Command {
             .setTitle(t("misc:invite"))
             .addField("\u200b", `${message.client.config.invite(this.client)}`)
             .setImage(
-                "https://welcome-bot.github.io/assets/img/graphics3-standard.gif"
+                ""
             );
         const button = new MessageButton()
             .setLabel(t("misc:invite"))

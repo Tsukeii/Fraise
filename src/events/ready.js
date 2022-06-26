@@ -62,6 +62,6 @@ module.exports = {
         require("../functions/versionSender")(client);
         if (process.env.NODE_ENV !== "production")
             require("../helpers/updateDocs")(client);
-        client.logger.log(`Welcome-Bot v${client.package.version} started!`);
+        client.logger.log(`Straw v${client.package.version} started!`);
     },
 };

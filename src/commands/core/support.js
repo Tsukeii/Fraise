@@ -35,11 +35,6 @@ module.exports = class CMD extends Command {
         })
             .setTitle(t("cmds:support.cmdDesc"))
             .addField("\u200b", `Join the support server`)
-            .addField(
-                "🔗 Links:",
-                "> [GitHub](https://github.com/Welcome-Bot/welcome-bot/)\n" +
-                    "> [Documentation](https://welcome-bot.github.io/docs)"
-            )
             .setURL(`${link}`);
         const button = new MessageButton()
             .setLabel("Join the support server")

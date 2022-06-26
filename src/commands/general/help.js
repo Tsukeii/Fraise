@@ -11,7 +11,7 @@ module.exports = class CMD extends Command {
         super(
             {
                 name: "help",
-                aliases: ["commands", "cmds", "ajuda"], //ajuda means help in portuguese
+                aliases: ["commands", "cmds", "h"], //ajuda means help in portuguese
                 memberPerms: [],
                 botPerms: [],
                 requirements: {
