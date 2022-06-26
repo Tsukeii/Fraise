@@ -42,7 +42,7 @@ module.exports = class CMD extends Command {
                 t("misc:datelaunched"),
                 `\`\`\`${moment(timestamp).format("LLLL")}\`\`\``
             )
-            .addDescription(`Rejoindre le serveur d'Assistance de [Straw](https://discord.gg/pstd264aFP)`);
+            .setThumbnail(`https://media.discordapp.net/attachments/990660022889480192/990673750372536390/IMG_20220626_001511_309.jpg`);
         const embed1 = new Embed({
             color: "green",
             timestamp: false,
