@@ -34,10 +34,10 @@ module.exports = class CMD extends Command {
             footer: t("cmds:support.footer"),
         })
             .setTitle(t("cmds:support.cmdDesc"))
-            .addField("\u200b", `Join the support server`)
+            .addField("\u200b", `Rejoindre le serveur d'Assistance`)
             .setURL(`${link}`);
         const button = new MessageButton()
-            .setLabel("Join the support server")
+            .setLabel("Rejoindre Straw Café")
             .setURL(`${link}`)
             .setStyle("LINK");
         const row = new MessageActionRow().addComponents(button);
