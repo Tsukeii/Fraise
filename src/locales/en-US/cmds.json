@@ -179,7 +179,7 @@
   },
   "botinfo": {
     "cmdDesc": "Bot information",
-    "footer": "Information & Stats of Welcome-Bot"
+    "footer": "Information & Stats of Straw"
   },
   "botperms": {
     "cmdDesc": "List of permissions given to bot"
@@ -188,7 +188,7 @@
     "cmdDesc": "Get Invite link for the bot"
   },
   "lib": {
-    "cmdDesc": "Library used to build Welcome-Bot"
+    "cmdDesc": "Library used to build Straw"
   },
   "ping": {
     "cmdDesc": "Get ping of the bot"
@@ -197,7 +197,7 @@
     "cmdDesc": "Report bugs",
     "usage": "[bug description]",
     "done": "Your bug has been reported, Thank You.",
-    "view": "You can view it in Welcome-Bot support server in <#{{chanid}}> channel."
+    "view": "You can view it in Straw support server in <#{{chanid}}> channel."
   },
   "shards": {
     "cmdDesc": "Shows information about the bot's shards"
@@ -206,18 +206,18 @@
     "cmdDesc": "Give suggestions",
     "usage": "[suggestion description]",
     "done": "Your suggestion has been added, Thank You.",
-    "view": "You can view it in Welcome-Bot support server in <#{{chanid}}> channel."
+    "view": "You can view it in Straw support server in <#{{chanid}}> channel."
   },
   "support": {
-    "cmdDesc": "Get Support for Welcome-Bot",
-    "footer": "Official Support Discord for Welcome-Bot"
+    "cmdDesc": "Get Support for Straw",
+    "footer": "Official Support Discord for Straw"
   },
   "uptime": {
     "cmdDesc": "Get uptime of the bot"
   },
   "vote": {
-    "cmdDesc": "Vote for Welcome-Bot and claim your bonus WCoins (500 WCoins)",
-    "title": "Vote for Welcome-Bot",
+    "cmdDesc": "Vote for Straw and claim your bonus WCoins (500 WCoins)",
+    "title": "Vote for Straw",
     "rewards": {
       "index": "**Rewards**",
       "coins": ":dollar: WCoins {{coins}}",
@@ -227,11 +227,11 @@
       "dbl": "**[Vote on Top.gg]({{link}})** to claim your bonus.",
       "bls": "**[Vote on botlist.space]({{link}})** to claim your bonus."
     },
-    "howToVoteServer": "**[Vote on Top.gg for Welcome-Bot server]({{link}})** to claim another bonus.",
+    "howToVoteServer": "**[Vote on Top.gg for Straw server]({{link}})** to claim another bonus.",
     "alreadyVoted": "You have already voted in the last 12 hours, try again soon."
   },
   "website": {
-    "cmdDesc": "Link to Welcome-Bot's website"
+    "cmdDesc": "Link to Straw's website"
   },
   "balance": {
     "cmdDesc": "Check your balance, or someone else's. Shows wallect & bank",
@@ -306,7 +306,7 @@
     "failed": "You were caught by the police when stealing and you lost {{lostCoins}}"
   },
   "setbio": {
-    "cmdDesc": "Set your Welcome-Bot account's bio!",
+    "cmdDesc": "Set your Straw account's bio!",
     "usage": "[bio]",
     "success": "Successfully set bio to **{{bio}}**"
   },
@@ -415,7 +415,7 @@
     "cmdHelp": "Help for {{cmd}} command",
     "cmds": "Use arrows ⏪⏩ or `{{prefix}}help [category]`",
     "listcats": "List of categories",
-    "bot-help": "Welcome-Bot help",
+    "bot-help": "Straw help",
     "in_cat": "Commands in this category"
   },
   "listemojis": {
