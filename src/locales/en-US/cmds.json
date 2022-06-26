@@ -1,88 +1,88 @@
 {
   "autopublish": {
-    "cmdDesc": "Manage autopublish settings",
-    "usage": "(subcommand)",
+    "cmdDesc": "Gérer les paramètres de publication automatique",
+    "usage": "(sous-commande)",
     "current": {
-      "title": "Current settings for autopublish",
-      "desc": "These are the current Autopublish settings of this Server.\nUse `{{prefix}}autorole [subcommand]` to change them."
+      "title": "Paramètres actuels pour la publication automatique ",
+      "desc": "Paramètres actuels de publication automatiqueIl s'agit des paramètres actuels de publication automatique de ce serveur.\nUtiliser  `{{prefix}}autorole [sous-commande]` pour les changer."
     },
-    "disabled": "Successfully disabled autopublish",
-    "enabled": "Successfully enabled autopublish"
+    "disabled": "La publication automatique a bien été désactivée ",
+    "enabled": "La publication automatique a bien été activée "
   },
   "autorole": {
-    "cmdDesc": "Manage autorole settings",
-    "usage": "(subcommand)",
-    "success": "Autorole set to {{role}}",
+    "cmdDesc": "Gérer les paramètres de rôle automatique",
+    "usage": "(sous-commande)",
+    "success": "Rôle automatique défini sur {{role}}",
     "current": {
-      "title": "Current settings for autorole",
-      "desc": "These are the current Autorole settings of this Server.\nUse `{{prefix}}autorole [subcommand]` to change them."
+      "title": "Paramètres actuels pour le rôle automatique",
+      "desc": "Ce sont les paramètres Autorole actuels de ce serveur.\nUtilisez `{{prefix}}autorole [sous-commande]` pour les modifier."
     },
-    "invalidRole": "The role id you provided is invalid, use roleid command to get id of a role",
-    "disabled": "Successfully disabled autorole",
-    "enabled": "Successfully enabled autorole"
+    "invalidRole": "L'identifiant de rôle que vous avez fourni n'est pas valide, utilisez la commande roleid pour obtenir l'identifiant d'un rôle",
+    "disabled": "Autorole désactivé avec succès",
+    "enabled": "Le rôle automatique a bien été activé"
   },
   "backup": {
-    "cmdDesc": "Take backup of your server!",
-    "usage": "[subcommand]",
-    "warning": ":warning: All the server channels, roles, and settings will be cleared. Do you want to continue? Send `confirm` or `cancel`!",
-    "dm": "Here is your backup id: `{{id}}`. Use `{{prefix}}backup load {{id}}` to load it",
-    "invalidId": ":x: Invalid backup ID",
-    "cancelled": ":x: Cancelled.",
-    "success": "Backup loaded successfully!",
-    "created": "Backup created! I have sent you the ID in DMs."
+    "cmdDesc": "Faites une sauvegarde de votre serveur ! ",
+    "usage": "[sous-commande ]",
+    "warning": ":warning: Tous les canaux, rôles et paramètres du serveur seront effacés. Voulez-vous continuer? Envoyer `confirm` ou `cancel`!",
+    "dm": "Voici votre identifiant de sauvegarde : `{{id}}`. Utilisation `{{prefix}}backup load {{id}}` pour le charger",
+    "invalidId": ":x: ID de sauvegarde non valide",
+    "cancelled": ":x: Annulé.",
+    "success": "Sauvegarde chargée avec succès !",
+    "created": "Sauvegarde créée ! Je vous ai envoyé la pièce d'identité en DM."
   },
   "chatbot": {
-    "cmdDesc": "Manage chatbot settings",
-    "usage": "(subcommand)",
+    "cmdDesc": "Gérer les paramètres du chatbot",
+    "usage": "(sous-commande)",
     "set": {
-      "channel": "Chatbot channel set to {{channel}}"
+      "channel": "Le canal du chatbot est défini sur {{channel}}"
     },
     "current": {
-      "title": "Current settings for chatbot",
-      "desc": "These are the current Chatbot settings of this Server.\nUse `{{prefix}}chatbot [subcommand]` to change them."
+      "title": "Paramètres actuels du chatbot",
+      "desc": "Ce sont les paramètres actuels du chatbot de ce serveur.\nUtiliser `{{prefix}}chatbot [sous-commande]` pour les changer."
     },
     "invalid": {
-      "channel": "The channel you provided is invalid"
+      "channel": "La chaîne que vous avez fournie n'est pas valide"
     },
-    "disabled": "Successfully disabled chatbot",
-    "enabled": "Successfully enabled chatbot"
+    "disabled": "Chatbot désactivé avec succès",
+    "enabled": "Chatbot activé avec succès"
   },
   "config": {
-    "cmdDesc": "See current configuration"
+    "cmdDesc": "Voir la configuration actuelle"
   },
   "disable": {
-    "cmdDesc": "Disable commands.",
-    "usage": "(command name / subcommand)",
-    "title": "Currently disabled commands",
-    "done": "Successfully disabled!"
+    "cmdDesc": "Désactiver les commandes.",
+    "usage": "(nom de commande / sous-commande)",
+    "title": "Commandes actuellement désactivées",
+    "done": "Désactivé avec succès !"
   },
   "enable": {
-    "cmdDesc": "Enable commands.",
-    "usage": "[command name]",
-    "notDisabled": "That command was not disabled so not doing anything",
-    "done": "Successfully enabled!"
+    "cmdDesc": "Activer les commandes.",
+    "usage": "[nom de la commande]",
+    "notDisabled": "Cette commande n'a pas été désactivée donc ne rien faire",
+    "done": "Activé avec succès !"
   },
   "follow": {
-    "cmdDesc": "Get news and version updates to this bot sent to a specific channel.",
-    "usage": "[channel / channel id]",
-    "success": "Successfully followed"
+    "cmdDesc": "Recevez des nouvelles et des mises à jour de version de ce bot envoyées à un canal spécifique.",
+    "usage": "[canal/identifiant de canal]",
+    "success": "Suivi avec succès"
   },
   "goodbye": {
-    "cmdDesc": "Manage goodbye logs settings",
-    "usage": "(subcommand)",
+    "cmdDesc": "Gérer les paramètres des journaux d'adieu",
+    "usage": "(sous-commande)",
     "set": {
-      "channel": "Goodbye channel set to {{channel}}",
-      "message": "Goodbye message set to ```\n{{message}}\n```"
+      "channel": "Canal d'adieu réglé sur {{channel}}",
+      "message": "Message d'adieu défini sur ```\n{{message}}\n```"
     },
     "current": {
-      "title": "Current settings for goodbye logs",
-      "desc": "These are the current Goodbye logs settings of this Server.\nUse `{{prefix}}goodbye [subcommand]` to change them."
+      "title": "Paramètres actuels pour les journaux d'adieu",
+      "desc": "Il s'agit des paramètres actuels des journaux d'adieu de ce serveur.\nUtiliser `{{prefix}}goodbye [sous-commande]` pour les changer."
     },
     "invalid": {
-      "channel": "The channel you provided is invalid"
+      "channel": "La chaîne que vous avez fournie n'est pas valide"
     },
-    "disabled": "Successfully disabled goodbye logs",
-    "enabled": "Successfully enabled goodbye logs"
+    "disabled": "Les journaux d'adieu ont bien été désactivés",
+    "enabled": "Les journaux d'adieu ont bien été activés"
   },
   "lang": {
     "cmdDesc": "Change language",
@@ -93,501 +93,501 @@
     "langNotProvided": "You have not provided lang argument"
   },
   "modlogs": {
-    "cmdDesc": "Manage ModLogs settings",
-    "usage": "(subcommand)",
-    "channelSet": "ModLogs channel set to {{channel}}",
+    "cmdDesc": "Gérer les paramètres ModLogs",
+    "usage": "(sous-commande)",
+    "channelSet": "Canal ModLogs défini sur {{channel}}",
     "current": {
-      "title": "Current settings for ModLogs",
-      "desc": "These are the current ModLogs settings of this Server.\nUse `{{prefix}}modlogs [subcommand]` to change them."
+      "title": "Paramètres actuels pour ModLogs",
+      "desc": "Ce sont les paramètres ModLogs actuels de ce serveur.\nUtiliser `{{prefix}}modlogs [sous-commande]` pour les changer."
     }
   },
   "prefix": {
-    "cmdDesc": "Manage prefix for this server",
-    "usage": "(subcommand)"
+    "cmdDesc": "Gérer le préfixe pour ce serveur",
+    "usage": "(sous-commande)"
   },
   "serverlogs": {
-    "cmdDesc": "Manage server logs settings",
-    "usage": "(subcommand)",
+    "cmdDesc": "Gérer les paramètres des journaux du serveur",
+    "usage": "(sous-commande)",
     "set": {
-      "channel": "Server logs channel set to {{channel}}"
+      "channel": "Canal des journaux du serveur défini sur {{channel}}"
     },
     "current": {
-      "title": "Current settings for server logs",
-      "desc": "These are the current Server logs settings of this Server.\nUse `{{prefix}}serverlogs [subcommand]` to change them."
+      "title": "Paramètres actuels des journaux de serveur",
+      "desc": "Il s'agit des paramètres actuels des journaux de serveur de ce serveur.\nUtiliser `{{prefix}}serverlogs [sous-commande]` pour les changer."
     },
     "invalid": {
-      "channel": "The channel you provided is invalid"
+      "channel": "La chaîne que vous avez fournie n'est pas valide"
     },
-    "disabled": "Successfully disabled server logs",
-    "enabled": "Successfully enabled server logs"
+    "disabled": "Les journaux du serveur ont été désactivés avec succès",
+    "enabled": "Les journaux du serveur ont bien été activés"
   },
   "welcome": {
-    "cmdDesc": "Manage welcome logs settings",
-    "usage": "(subcommand)",
+    "cmdDesc": "Gérer les paramètres des journaux de bienvenue",
+    "usage": "(sous-commande)",
     "set": {
-      "channel": "Welcome channel set to {{channel}}",
-      "message": "Welcome message set to ```\n{{message}}\n```"
+      "channel": "Chaîne de bienvenue définie sur {{channel}}",
+      "message": "Message de bienvenue défini sur ```\n{{message}}\n```"
     },
     "current": {
-      "title": "Current settings for welcome logs",
-      "desc": "These are the current Welcome logs settings of this Server.\nUse `{{prefix}}welcome [subcommand]` to change them."
+      "title": "Paramètres actuels des journaux de bienvenue",
+      "desc": "Il s'agit des paramètres actuels des journaux de bienvenue de ce serveur.\nUtiliser `{{prefix}}welcome [sous-commande]` pour les changer."
     },
     "invalid": {
-      "channel": "The channel you provided is invalid"
+      "channel": "La chaîne que vous avez fournie n'est pas valide"
     },
-    "disabled": "Successfully disabled welcome logs",
-    "enabled": "Successfully enabled welcome logs"
+    "disabled": "Les journaux de bienvenue ont bien été désactivés",
+    "enabled": "Les journaux de bienvenue ont bien été activés"
   },
   "cuddle": {
-    "cmdDesc": "Cuddle with a user",
-    "usage": "[@mention / user id]",
-    "success": "{{author}} just cuddled to {{user}}",
-    "errorYourself": "You can't cuddle yourself."
+    "cmdDesc": "Câliner avec un utilisateur",
+    "usage": "[@mention / identifiant utilisateur]",
+    "success": "{{author}} as juste câliné {{user}}",
+    "errorYourself": "Vous ne pouvez pas vous câliner."
   },
   "hug": {
-    "cmdDesc": "Give a hug to a user",
-    "usage": "[@mention / user id]",
-    "success": "{{author}} has hugged {{user}}",
-    "errorYourself": "You can't hug yourself."
+    "cmdDesc": "Faire un câlin à un utilisateur",
+    "usage": "[@mention / identifiant utilisateur]",
+    "success": "{{author}} as fait un câlin à {{user}}",
+    "errorYourself": "Vous ne pouvez pas vous câliner."
   },
   "kiss": {
-    "cmdDesc": "Kiss a user",
-    "usage": "[@mention / user id]",
-    "success": "{{author}} has kissed {{user}}",
-    "errorYourself": "You can't kiss yourself!"
+    "cmdDesc": "Embrasser un utilisateur",
+    "usage": "[@mention / identifiant utilisateur]",
+    "success": "{{author}} a embrassé {{user}}",
+    "errorYourself": "Tu ne peux pas t'embrasser !"
   },
   "pat": {
-    "cmdDesc": "Pats someone",
-    "usage": "[@mention / user id]",
-    "success": "{{author}} pats {{user}}",
-    "errorYourself": "You can't pat yourself!"
+    "cmdDesc": "Caresser quelqu'un",
+    "usage": "[@mention / identifiant utilisateur]",
+    "success": "{{author}} caresse {{user}}",
+    "errorYourself": "Vous ne pouvez pas vous caresser !"
   },
   "slap": {
-    "cmdDesc": "Slap a user",
-    "usage": "[@mention / user id]",
-    "success": "{{author}} slapped {{user}}",
-    "errorYourself": "You can't slap yourself!"
+    "cmdDesc": "Gifle un utilisateur",
+    "usage": "[@mention / identifiant utilisateur]",
+    "success": "{{author}} as giflé {{user}}",
+    "errorYourself": "Vous ne pouvez pas vous gifler !"
   },
   "tickle": {
-    "cmdDesc": "Tickle a user",
-    "usage": "[@mention / user id]",
-    "success": "{{author}} tickles {{user}}",
-    "errorYourself": "You can't tickle yourself!"
+    "cmdDesc": "Chatouiller un utilisateur",
+    "usage": "[@mention / identifiant utilisateur]",
+    "success": "{{author}} chatouille {{user}}",
+    "errorYourself": "Vous ne pouvez pas vous chatouiller !"
   },
   "waifu": {
     "cmdDesc": "Fetches a random waifu and displays it."
   },
   "botinfo": {
-    "cmdDesc": "Bot information",
-    "footer": "Information & Stats of Straw"
+    "cmdDesc": "Informations sur le bot",
+    "footer": "Informations et statistiques de Straw"
   },
   "botperms": {
-    "cmdDesc": "List of permissions given to bot"
+    "cmdDesc": "Liste des autorisations accordées au bot"
   },
   "invite": {
-    "cmdDesc": "Get Invite link for the bot"
+    "cmdDesc": "Obtenir le lien d'invitation pour le bot"
   },
   "lib": {
-    "cmdDesc": "Library used to build Straw"
+    "cmdDesc": "Bibliothèque utilisée pour construire Straw"
   },
   "ping": {
-    "cmdDesc": "Get ping of the bot"
+    "cmdDesc": "Obtenir le ping du bot"
   },
   "report": {
-    "cmdDesc": "Report bugs",
-    "usage": "[bug description]",
-    "done": "Your bug has been reported, Thank You.",
-    "view": "You can view it in Straw support server in <#{{chanid}}> channel."
+    "cmdDesc": "Signaler des bogues",
+    "usage": "[description du bogue]",
+    "done": "Votre bug a été signalé, merci.",
+    "view": "Vous pouvez le voir dans le serveur de support Straw dans le salon <#{{chanid}}>."
   },
   "shards": {
-    "cmdDesc": "Shows information about the bot's shards"
+    "cmdDesc": "Affiche des informations sur les fragments du bot"
   },
   "suggest": {
-    "cmdDesc": "Give suggestions",
-    "usage": "[suggestion description]",
-    "done": "Your suggestion has been added, Thank You.",
-    "view": "You can view it in Straw support server in <#{{chanid}}> channel."
+    "cmdDesc": "Faire des suggestions",
+    "usage": "[description de la suggestion]",
+    "done": "Votre suggestion a été ajoutée, merci.",
+    "view": "Vous pouvez le voir dans le serveur de support Straw dans le salon <#{{chanid}}>."
   },
   "support": {
-    "cmdDesc": "Get Support for Straw",
-    "footer": "Official Support Discord for Straw"
+    "cmdDesc": "Obtenir de l'aide pour Straw",
+    "footer": "Support officiel Discord pour Straw"
   },
   "uptime": {
-    "cmdDesc": "Get uptime of the bot"
+    "cmdDesc": "Obtenez la disponibilité du bot"
   },
   "vote": {
-    "cmdDesc": "Vote for Straw and claim your bonus WCoins (500 WCoins)",
-    "title": "Vote for Straw",
+    "cmdDesc": "Votez pour Straw et réclamez vos Piéces bonus (500 Piéces)",
+    "title": "Votez pour Straw",
     "rewards": {
-      "index": "**Rewards**",
-      "coins": ":dollar: WCoins {{coins}}",
-      "banknote": ":bank: Banknote × 3"
+      "index": "**Recompenses**",
+      "coins": ":dollar: Piéces {{coins}}",
+      "banknote": ":bank: Billet de banque × 3"
     },
     "howToVote": {
-      "dbl": "**[Vote on Top.gg]({{link}})** to claim your bonus.",
-      "bls": "**[Vote on botlist.space]({{link}})** to claim your bonus."
+      "dbl": "**[Vote sur Top.gg]({{link}})** pour réclamer votre bonus.",
+      "bls": "**[Vote sur botlist.space]({{link}})** pour réclamer votre bonus."
     },
-    "howToVoteServer": "**[Vote on Top.gg for Straw server]({{link}})** to claim another bonus.",
-    "alreadyVoted": "You have already voted in the last 12 hours, try again soon."
+    "howToVoteServer": "**[Vote sur Top.gg for Straw server]({{link}})** réclamer un autre bonus.",
+    "alreadyVoted": "Vous avez déjà voté dans les 12 dernières heures, réessayez bientôt."
   },
   "website": {
-    "cmdDesc": "Link to Straw's website"
+    "cmdDesc": "Lien vers le site de Straw"
   },
   "balance": {
-    "cmdDesc": "Check your balance, or someone else's. Shows wallect & bank",
-    "title": "{{user}}'s balance",
+    "cmdDesc": "Vérifiez votre solde ou celui de quelqu'un d'autre. Affiche wallect et banque",
+    "title": "{{user}}' balance",
     "titleShort": "Balance",
-    "bal": ":dollar: Wallet: {{wallet}}\n:credit_card: Bank: {{bank}}/{{bankLimit}} ({{percentage}}% empty)",
-    "walletOnly": "Wallet: {{wallet}}",
-    "bankOnly": "Bank: {{bank}}/{{bankLimit}} ({{percentage}}% empty)"
+    "bal": ":dollar: Porte monnaie: {{wallet}}\n:credit_card: Banque: {{bank}}/{{bankLimit}} ({{percentage}}% vide)",
+    "walletOnly": "Porte monnaie: {{wallet}}",
+    "bankOnly": "Banque: {{bank}}/{{bankLimit}} ({{percentage}}% vide)"
   },
   "beg": {
-    "cmdDesc": "Get money by begging!",
+    "cmdDesc": "Gagner de l'argent en mendiant !",
     "chances": {
-      "failed": "Oh poor beggar, don't you feel ashame :question:",
-      "success": "Woah... Seems you have a way with people :people_hugging:, you got {{wcoins}} from begging",
-      "little": "Somehow you managed to beg {{wcoins}} from a poor person :bearded_person:"
+      "failed": "Oh pauvre mendiant, n'as-tu pas honte :question:",
+      "success": "Woah... Il semble que tu es doué avec les gens :people_hugging:, vous avez {{wcoins}} de la mendicité",
+      "little": "D'une manière ou d'une autre, tu as réussi à supplier {{wcoins}} d'un pauvre :bearded_person:"
     }
   },
   "buy": {
-    "cmdDesc": "Buy items which are available in the shop",
-    "usage": "[item] (amount)",
-    "notAvailable": "Sorry friend, but that item is not available for sale",
-    "noMoney": "You don't have enough money to buy that! Check the shop",
-    "done": "Successfully bought {{amount}} {{item}}(s)"
+    "cmdDesc": "Achetez des articles disponibles dans la boutique",
+    "usage": "[Objet] (montant)",
+    "notAvailable": "Désolé mon ami, mais cet article n'est pas disponible à la vente",
+    "noMoney": "Vous n'avez pas assez d'argent pour acheter ça ! Consultez la boutique",
+    "done": "Acheté avec succès {{amount}} {{item}}(s)"
   },
   "daily": {
-    "cmdDesc": "Get your daily wcoins!",
-    "success": "{{wcoins}} WCoins were placed in your wallet!\n\nYou can get more rewards by voting! (vote command for more info)",
-    "dailyClaimed": "You have already claimed your daily money. Try again in {{duration}}"
+    "cmdDesc": "Obtenez vos pièces quotidiennes !",
+    "success": "{{wcoins}} Des pièces ont été placées dans votre portefeuille !\n\nVous pouvez obtenir plus de récompenses en votant ! (commande de vote pour plus d'informations)",
+    "dailyClaimed": "Vous avez déjà réclamé votre argent quotidien. Réessayez dans {{duration}}"
   },
   "deposit": {
-    "cmdDesc": "Deposit money to your bank",
-    "usage": "[coins / subcommand]",
-    "notAvailable": "Woah... You don't have that much money in your wallet!",
-    "noSpace": "Woah... You don't have space to deposit that money!",
-    "noMoney": "Hey! You don't have anything in wallet to deposit",
-    "missingAmount": "The amount you specified is Not a Number or you did't specify the amount to deposit.",
-    "title": "Money deposited",
-    "success": "Deposited {{amount}} WCoins"
+    "cmdDesc": "Déposez de l'argent à votre banque",
+    "usage": "[pièces / sous-commande]",
+    "notAvailable": "Woah... Vous n'avez pas beaucoup d'argent dans votre portefeuille !",
+    "noSpace": "Woah... Vous n'avez pas d'espace pour déposer cet argent !",
+    "noMoney": "Hé! Vous n'avez rien dans votre portefeuille à déposer",
+    "missingAmount": "Le montant que vous avez spécifié n'est pas un nombre ou vous n'avez pas spécifié le montant à déposer.",
+    "title": "Argent déposé",
+    "success": "Déposé {{amount}} Pièces"
   },
   "gift": {
-    "cmdDesc": "Donate some items to another user",
-    "usage": "[@mention / user id] [item] (amount)",
-    "title": "Donated item!",
-    "success": "{{mention}} You gave {{user}} {{amount}} {{item}}(s)",
-    "noItem": "You didn't provide any item",
-    "errorYourself": "Woah, can you donate yourself?"
+    "cmdDesc": "Faire don de certains articles à un autre utilisateur ",
+    "usage": "[@mention / identifiant utilisateur] [Objet] (montant)",
+    "title": "Article donné !",
+    "success": "{{mention}} Vous avez donné {{user}} {{amount}} {{item}}(s)",
+    "noItem": "Vous n'avez fourni aucun élément",
+    "errorYourself": "Woah, pouvez-vous faire un don vous-même ?"
   },
   "give": {
-    "cmdDesc": "Donate money to another user",
-    "usage": "[@mention / user id] [amount]",
-    "title": "Donated money!",
-    "success": "{{mention}} You gave {{user}} {{amount}}, now you have {{yourWallet}} and they've got {{userWallet}}",
-    "errorYourself": "Woah, can you donate yourself?"
+    "cmdDesc": "Donner de l'argent à un autre utilisateur",
+    "usage": "[@mention / identifiant utilisateur] [montant]",
+    "title": "Don d'argent !",
+    "success": "{{mention}} Vous avez donné {{user}} {{amount}}, maintenant vous avez {{yourWallet}} et ils ont  {{userWallet}}",
+    "errorYourself": "Woah, pouvez-vous vous faire un don ?"
   },
   "inventory": {
-    "cmdDesc": "Shows yours or some one else's inventory",
-    "noItems": "You don't have anything in your inventory"
+    "cmdDesc": "Affiche votre inventaire ou celui de quelqu'un d'autre",
+    "noItems": "Vous n'avez rien dans votre inventaire"
   },
   "leaderboard": {
-    "cmdDesc": "Shows the leaderboard"
+    "cmdDesc": "Affiche le classement"
   },
   "profile": {
-    "cmdDesc": "Shows your profile or someone else's.",
-    "title": "Profile of {{tag}}"
+    "cmdDesc": "Affiche votre profil ou celui de quelqu'un d'autre.",
+    "title": "Profile de {{tag}}"
   },
   "rob": {
-    "cmdDesc": "Steal another user's wallet! :dollar:",
+    "cmdDesc": "Volez le portefeuille d'un autre utilisateur ! :dollar:",
     "usage": "[@mention]",
-    "notEnoughMoney": "You must have at least 200 WCoins in your wallet to rob someone",
-    "userNotEnoughMoney": "User {{tag}} doesn't have at least 200 in their wallet, it's useless to steal them.",
-    "success": "You stole {{stolenCoins}} from {{tag}}! :tada:",
-    "failed": "You were caught by the police when stealing and you lost {{lostCoins}}"
+    "notEnoughMoney": "Vous devez avoir au moins 200 pièces dans votre portefeuille pour voler quelqu'un",
+    "userNotEnoughMoney": "Utilisateur {{tag}} n'en a pas au moins 200 dans son portefeuille, inutile de les voler.",
+    "success": "Vous avez volé {{stolenCoins}} de {{tag}}! :tada:",
+    "failed": "Vous avez été pris par la police en train de voler et vous avez perdu {{lostCoins}}"
   },
   "setbio": {
-    "cmdDesc": "Set your Straw account's bio!",
+    "cmdDesc": "Définissez la bio de votre compte Straw !",
     "usage": "[bio]",
-    "success": "Successfully set bio to **{{bio}}**"
+    "success": "Définissez avec succès la bio sur **{{bio}}**"
   },
   "shop": {
-    "cmdDesc": "Shop items",
-    "notAvailable": "Not available",
-    "available": "Available"
+    "cmdDesc": "Articles de la boutique",
+    "notAvailable": "Indisponible",
+    "available": "Disponible"
   },
   "use": {
-    "cmdDesc": "Use your items",
-    "usage": "[item] (count)",
-    "notAnItem": "What are you thinking fool? There is no item like that or it is not usable item",
-    "youDontHaveAny": "Hmm, wait... Looks like you don't have any of those",
-    "tooMuch": "Hey!\nYou don't have {{count}} {{item}}(s) in your inventory",
-    "used": "You successfully used your {{count}} {{item}}(s).\n{{metadata}}",
-    "banknote": "Your bank space increased by {{added}}"
+    "cmdDesc": "Utilisez vos articles",
+    "usage": "[Objet] nombre d'éléments)",
+    "notAnItem": "A quoi penses-tu imbécile ? Il n'y a pas d'article comme ça ou ce n'est pas un article utilisable",
+    "youDontHaveAny": "Hmm, attendez... On dirait que vous n'en avez aucun",
+    "tooMuch": "Hé !\nVous n'avez pas {{count}} {{item}}(s) dans votre inventaire",
+    "used": "Vous avez utilisé avec succès votre {{count}} {{item}}(s).\n{{metadata}}",
+    "banknote": "Votre espace bancaire augmenté de {{added}}"
   },
   "withdraw": {
-    "cmdDesc": "Withdraw money from your bank",
-    "usage": "[coins / subcommand]",
-    "notAvailable": "Woah... You don't have that much money in your bank!",
-    "title": "Money withdrawed",
-    "noMoney": "Hey! You don't have anything in bank to withdraw",
-    "isNegative": "Woah! The number you gave is negative, I won't help.",
-    "success": "Withdrawed {{wcoins}} WCoins"
+    "cmdDesc": "Retirer de l'argent de votre banque",
+    "usage": "[pièces / sous-commande]",
+    "notAvailable": "Woah... Vous n'avez pas beaucoup d'argent dans votre banque !",
+    "title": "Argent retiré",
+    "noMoney": "Hé! Vous n'avez rien en banque à retirer",
+    "isNegative": "Waouh ! Le nombre que vous avez donné est négatif, je ne vais pas vous aider.",
+    "success": "Retiré {{wcoins}} Piéces"
   },
   "8ball": {
-    "cmdDesc": "Get your fortune by asking your question",
+    "cmdDesc": "Faites fortune en posant votre question",
     "usage": "[question]"
   },
   "coinflip": {
-    "cmdDesc": "Flip a coin.",
-    "done": "I've flipped a coin and it landed {{chosenSide}}"
+    "cmdDesc": "Lancer une pièce.",
+    "done": "J'ai lancé une pièce et elle a atterri {{chosenSide}}"
   },
   "duck": {
-    "cmdDesc": "Shows a random duck image"
+    "cmdDesc": "Affiche une image de canard aléatoire"
   },
   "emojify": {
-    "cmdDesc": "Emojify a text.",
-    "usage": "[text]"
+    "cmdDesc": "Emojiifier un texte.",
+    "usage": "[texte]"
   },
   "figlet": {
-    "cmdDesc": "Implement the FIGfont spec in JS",
-    "usage": "[string]",
-    "error": "Your text has to be smaller than 20 characters"
+    "cmdDesc": "Implémenter la spécification FIGfont en JS",
+    "usage": "[chaîne de caractères]",
+    "error": "Votre texte doit être inférieur à 20 caractères"
   },
   "image": {
-    "cmdDesc": "Generate a random pokemon image"
+    "cmdDesc": "Générer une image pokemon aléatoire"
   },
   "pokemon": {
-    "cmdDesc": "Get a pokemon image",
-    "usage": "[pokemon character]",
-    "error": "Oh! Could not find that Pokemon"
+    "cmdDesc": "Obtenir une image pokémon",
+    "usage": "[personnage pokémon]",
+    "error": "Oh! Impossible de trouver ce Pokémon"
   },
   "addemoji": {
-    "cmdDesc": "Add emoji from a image link",
-    "usage": "[link] [emoji name]",
-    "nameMissing": "Emoji name is missing, please type `{{cmd}}` for help",
-    "invalidName": "The length of the emoji name must be between 2 and 32!",
+    "cmdDesc": "Ajouter des emoji à partir d'une ligne d'image",
+    "usage": "[lien] [nom d'emoji]",
+    "nameMissing": "Le nom de l'emoji est manquant, veuillez saisir `{{cmd}}` pour de l'akde",
+    "invalidName": "La longueur du nom de l'emoji doit être comprise entre 2 et 32 !",
     "success": "`{{emoji}}`",
-    "error": "{{emojiName}} couldn't be added. Check whether your server still has space for new emojis!"
+    "error": "{{emojiName}} n'a pas pu être ajouté. Vérifiez si votre serveur a encore de la place pour de nouveaux emojis !"
   },
   "avatar": {
-    "cmdDesc": "Get a user's avatar",
-    "profile": "Avatar of {{user}}"
+    "cmdDesc": "Obtenir l'avatar d'un utilisateur",
+    "profile": "Avatar de {{user}}"
   },
   "clone": {
-    "cmdDesc": "Clone a text",
-    "usage": "[text]"
+    "cmdDesc": "Cloner un texte",
+    "usage": "[texte]"
   },
   "chanid": {
-    "cmdDesc": "Get channel id",
-    "usage": "[channel]"
+    "cmdDesc": "Obtenir l'identifiant de la chaîne",
+    "usage": "[salon]"
   },
   "djsdocs": {
-    "cmdDesc": "Search djs docs",
-    "usage": "[query] (--source [source])"
+    "cmdDesc": "Rechercher des docs DJS",
+    "usage": "[requête] (--source [source])"
   },
   "roleid": {
-    "cmdDesc": "Get role id",
+    "cmdDesc": "Obtenir l'identifiant du rôle",
     "usage": "[@role]"
   },
   "screenshot": {
-    "cmdDesc": "Take a screenshot",
+    "cmdDesc": "Prendre une capture d'écran",
     "usage": "[site]"
   },
   "serverid": {
-    "cmdDesc": "Get server id"
+    "cmdDesc": "Obtenir l'identifiant du serveur"
   },
   "userid": {
-    "cmdDesc": "Get a id of a user",
-    "usage": "[@user]"
+    "cmdDesc": "Obtenir l'identifiant d'un utilisateur",
+    "usage": "[@utilisateur]"
   },
   "hastebin": {
-    "cmdDesc": "Upload your text on hastebin!",
-    "usage": "[text] (--extension [value])",
-    "invalidExt": "Invalid Extension",
-    "missingText": "Please enter a valid text!",
-    "title": "Upload complete!",
-    "success": "Here's your link: {{link}}"
+    "cmdDesc": "Téléchargez votre texte sur hastebin !",
+    "usage": "[texte] (--extension [évaluer])",
+    "invalidExt": "Extension invalide",
+    "missingText": "Veuillez entrer un texte valide !",
+    "title": "Téléchargement complet !",
+    "success": "Voici votre lien : {{link}}"
   },
   "help": {
-    "cmdDesc": "List all commands or get info for a specific command/category.",
-    "usage": "(command / category / --list-categories)",
-    "all": "List of all commands available in the bot",
-    "cmdHelp": "Help for {{cmd}} command",
-    "cmds": "Use arrows ⏪⏩ or `{{prefix}}help [category]`",
-    "listcats": "List of categories",
-    "bot-help": "Straw help",
-    "in_cat": "Commands in this category"
+    "cmdDesc": "Répertorier toutes les commandes ou obtenir des informations sur une commande/catégorie spécifique.",
+    "usage": "(commande / catégorie / --list-categories)",
+    "all": "Liste de toutes les commandes disponibles dans le bot",
+    "cmdHelp": "De l'aide pour la commande {{cmd}}",
+    "cmds": "Utilisez les flèches ⏪⏩ ou `{{prefix}}help [categorie]`",
+    "listcats": "Liste des catégories",
+    "bot-help": "Aide Straw",
+    "in_cat": "Commandes de cette catégorie"
   },
   "listemojis": {
-    "cmdDesc": "List of all custom emojis in this server, with there IDs."
+    "cmdDesc": "Liste de tous les emojis personnalisés de ce serveur, avec leurs identifiants."
   },
   "membercount": {
-    "cmdDesc": "Shows the server member count"
+    "cmdDesc": "Affiche le nombre de membres du serveur"
   },
   "perms": {
-    "cmdDesc": "Get permissions given to a specific user. Not providing any user mention will show your permissions",
-    "usage": "(@mention / user id)",
-    "message": "Permissions for **{{tag}}** in *{{channel}}* channel"
+    "cmdDesc": "Obtenez les autorisations accordées à un utilisateur spécifique. Ne fournir aucune mention d'utilisateur affichera vos autorisations",
+    "usage": "(@mention / identifiant utilisateur)",
+    "message": "Autorisations pour **{{tag}}** dans le salon *{{channel}}*"
   },
   "qrcode": {
-    "cmdDesc": "Generate or Read a QR code",
-    "usage": "[subcommand] [text / image url]"
+    "cmdDesc": "Générer ou lire un code QR",
+    "usage": "[sous-commande] [URL texte/image]"
   },
   "reminder": {
-    "cmdDesc": "Set a reminder",
-    "usage": "[time] (text)",
-    "remind": "Hey {{user}}, a gentle remember for `{{text}}`",
-    "set": "Reminder set!"
+    "cmdDesc": "Fixer un rappel",
+    "usage": "[heure] (texte)",
+    "remind": "Hé {{user}}, un doux rappelle pour `{{text}}`",
+    "set": "Rappel enregistrer !"
   },
   "reverse": {
-    "cmdDesc": "Reverse text",
-    "usage": "[text]"
+    "cmdDesc": "Texte inversé",
+    "usage": "[texte]"
   },
   "serverinfo": {
-    "cmdDesc": "Your server statistics",
+    "cmdDesc": "Statistiques de votre serveur",
     "usage": "(--dm)"
   },
   "staff": {
-    "cmdDesc": "View this server's staff"
+    "cmdDesc": "Voir le personnel de ce serveur"
   },
   "stealemoji": {
-    "cmdDesc": "Steal emojis from other servers",
+    "cmdDesc": "Volez des emojis sur d'autres serveurs",
     "usage": "[emoji]",
     "success": "`{{emoji}}`",
-    "error": "{{emojiName}} couldn't be added. Check whether your server still has space for new emojis!"
+    "error": "{{emojiName}} n'a pas pu être ajouté. Vérifiez si votre serveur a encore de la place pour de nouveaux emojis !"
   },
   "testwelcome": {
-    "cmdDesc": "Test by sending welcome message",
-    "welcomeDisabled": "Welcome logs are disabled and can't be tested right now."
+    "cmdDesc": "Testez en envoyant un message de bienvenue",
+    "welcomeDisabled": "Les journaux de bienvenue sont désactivés et ne peuvent pas être testés pour le moment."
   },
   "testgoodbye": {
-    "cmdDesc": "Test by sending goodbye message",
-    "goodbyeDisabled": "Goodbye logs are disabled and can't be tested right now."
+    "cmdDesc": "Testez en envoyant un message d'adieu",
+    "goodbyeDisabled": "Les journaux d'adieu sont désactivés et ne peuvent pas être testés pour le moment."
   },
   "user": {
-    "cmdDesc": "Get information about a user. It will show your info if no user was mentioned",
-    "usage": "(@mention / user id) (--dm)"
+    "cmdDesc": "Obtenir des informations sur un utilisateur. Il affichera vos informations si aucun utilisateur n'a été mentionné",
+    "usage": "(@mention / identifiant utilisateur) (--dm)"
   },
   "version": {
-    "cmdDesc": "Get information on a version or latest version",
+    "cmdDesc": "Obtenir des informations sur une version ou la dernière version",
     "usage": "(version)"
   },
   "cat": {
-    "cmdDesc": "Show a random cat image"
+    "cmdDesc": "Afficher une image de chat au hasard"
   },
   "ban": {
-    "cmdDesc": "Ban a user.",
-    "usage": "[@mention] (reason)",
-    "banned": "User banned",
-    "mySelf": "Please don't try to ban me, you have to do it yourself.",
-    "success": "Successfully banned **{{tag}}** from the server!"
+    "cmdDesc": "Bannir un utilisateur.",
+    "usage": "[@mention] (raison)",
+    "banned": "Utilisateur banni",
+    "mySelf": "S'il vous plaît, n'essayez pas de me bannir, vous devez le faire vous-même.",
+    "success": "Banni avec succès **{{tag}}** du serveur !"
   },
   "dehoist": {
-    "cmdDesc": "Dehoist users that are trying to hoist"
+    "cmdDesc": "Dehoist utilisateurs qui tentent de lever"
   },
   "kick": {
-    "cmdDesc": "Kick a user.",
-    "usage": "[@mention] (reason)",
-    "kicked": "User kicked",
-    "mySelf": "Please don't try to kick me, you have to do it yourself."
+    "cmdDesc": "Kick un utilisateur.",
+    "usage": "[@mention] (raison)",
+    "kicked": "Kick de l'utilisateur",
+    "mySelf": "S'il vous plaît, n'essayez pas de me frapper, vous devez le faire vous-même."
   },
   "lock": {
-    "cmdDesc": "Lock current channel",
-    "locked": "Locked down the channel",
-    "already": "The channel is already locked!"
+    "cmdDesc": "Verrouiller la chaîne actuelle",
+    "locked": "Salon verrouillé",
+    "already": "Le salon est déjà verrouillée !"
   },
   "mute": {
-    "cmdDesc": "Mute a member",
-    "usage": "[@mention / user id] (reason)",
-    "muted": "User muted",
-    "errorYourself": "Woah... Wait. Can you mute yourself?",
-    "memberHasPerm": "The member you are trying to mute has {{permission}} permission. So, I won't mute that member",
-    "reason": "Muted by {{tag}} for \"{{reason}}\" reason",
-    "DMtext": "You have been muted by {{tag}}.\nFor reason: {{reason}}",
-    "success": "Successfully muted **{{tag}}**!"
+    "cmdDesc": "Mettre un membre en sourdine",
+    "usage": "[@mention / identifiant utilisateur] (raison)",
+    "muted": "Utilisateur masqué",
+    "errorYourself": "Ouah... Attendez. Pouvez-vous vous mettre en sourdine ?",
+    "memberHasPerm": "Le membre que vous essayez de désactiver a {{permission}} autorisation. Donc, je ne mettrai pas ce membre en sourdine",
+    "reason": "Coupé par {{tag}} pour \"{{reason}}\".",
+    "DMtext": "Vous avez été mis en sourdine par {{tag}}.\nPour une raison : {{reason}}",
+    "success": "Mise en sourdine réussie **{{tag}}**!"
   },
   "unmute": {
-    "cmdDesc": "Unmute a member",
-    "usage": "[@mention / user id] (reason)",
-    "unmuted": "User unmuted",
-    "errorYourself": "Woah... Wait. Are you muted?",
-    "notMuted": "That member is currently not muted",
-    "reason": "Unmuted by {{tag}} for \"{{reason}}\" reason",
-    "DMtext": "You have been unmuted by {{tag}}.\nFor reason: {{reason}}",
-    "success": "Successfully unmuted **{{tag}}**!"
+    "cmdDesc": "Réactiver un membre",
+    "usage": "[@mention / identifiant utilisateur] (raison)",
+    "unmuted": "Utilisateur réactivé",
+    "errorYourself": "Ouah... Attendez. Êtes-vous muet ?",
+    "notMuted": "Ce membre n'est actuellement pas mis en sourdine",
+    "reason": "Réactivé par {{tag}} pour \"{{reason}}\".",
+    "DMtext": "Vous avez été réactivé par {{tag}}.\nFor raison: {{reason}}",
+    "success": "Réactivé avec succès **{{tag}}**!"
   },
   "prune": {
-    "cmdDesc": "Prune Messages. Add a -f option in the end to delete pinned messages also!"
+    "cmdDesc": "Élaguez les messages. Ajoutez une option -f à la fin pour supprimer également les messages épinglés !"
   },
   "unban": {
-    "cmdDesc": "Unban a user."
+    "cmdDesc": "Débannir un utilisateur."
   },
   "unlock": {
-    "cmdDesc": "Unlock current channel",
-    "unlocked": "Unlocked down the channel",
-    "already": "The channel is already unlocked!"
+    "cmdDesc": "Déverrouiller la chaîne actuelle",
+    "unlocked": "Déverrouillé sur le canal",
+    "already": "La chaîne est déjà déverrouillée !"
   },
   "back": {
-    "cmdDesc": "Play prevoius music",
-    "pleaseVote": "More than half members in the voice channel must react with 👍 to go to the prevoius music! {{count}} more votes are required.",
-    "success": "Went back to the prevoius song",
-    "failure": "An error occurred, When going back to the prevoius song."
+    "cmdDesc": "Jouer la musique précédente",
+    "pleaseVote": "Plus de la moitié des membres du canal vocal doivent réagir avec 👍 pour passer à la musique précédente ! {{count}} plus de votes sont nécessaires.",
+    "success": "Je suis revenu à la chanson précédente",
+    "failure": "Une erreur s'est produite lors du retour à la chanson précédente."
   },
   "loop": {
-    "cmdDesc": "Manage loop settings for music",
-    "usage": "[subcommand]",
-    "pleaseVote": "More than half members in the voice channel must react with 👍 to set loop mode! {{count}} more votes are required.",
-    "invalidMode": "Invalid loop mode provided, type `{{prefix}}help loop` for help. You have provided {{mode}}",
-    "success": "Loop mode set to {{mode}}.",
-    "failure": "An error occurred, When setting loop mode."
+    "cmdDesc": "Gérer les paramètres de boucle pour la musique",
+    "usage": "[sous-commande]",
+    "pleaseVote": "Plus de la moitié des membres du canal vocal doivent réagir avec 👍 pour passer en mode boucle !  {{count}} plus de votes sont nécessaires.",
+    "invalidMode": "Mode de boucle non valide fourni, tapez `{{prefix}}help loop` pour de l'aide. Vous avez fourni {{mode}}",
+    "success": "Mode boucle réglé sur {{mode}}.",
+    "failure": "Une erreur s'est produite lors du réglage du mode boucle."
   },
   "np": {
-    "cmdDesc": "The details of song which is being played now",
-    "playing": "Currently playing"
+    "cmdDesc": "Les détails de la chanson en cours de lecture",
+    "playing": "Joue actuellement"
   },
   "play": {
-    "cmdDesc": "Play music on channel.\nYou must join a voice channel before using this command.",
-    "usage": "[song name]",
-    "cantJoin": "Could not join your voice channel!",
-    "voiceNotJoined": "❌ Please join a voice channel before using this command",
-    "missingSongName": "You didn't provide me the song name to start playing",
-    "voiceChanDiff": "Please join the same voice channel the bot is in",
-    "playlistStart": "Starting playlist **{{playlistTitle}}**.\nPlaying the first song, **{{songName}}**! :musical_note:",
-    "botDisconnected": "Music has been stopped as I have been disconnected from the voice channel.",
-    "noResults": "The bot can't find any song like that :cry: [Note: Now we only support spotify]",
-    "queueEnd": "Queue has been ended. No more music to play :musical_note:...",
-    "queueAddCount": "{{songCount}} songs added to the queue!",
-    "queueAdded": "Added to queue",
-    "details": "Source: {{source}}\n🔗 Link: {{link}}\n👀 Views: {{views}}\nDuration: {{duration}}\nProgress: {{progress}}",
-    "errorOccurred": "An error occurred... Code: `{{error}}`",
-    "starting": "Starting to play",
-    "rateLimited": "Sorry, I can't play the song as I am rate limited",
-    "destroyedQueue": "The queue was destroyed, abd I can't play music using that queue. Please create a new queue from play command",
-    "playlistAdded": "Playlist \"{{playlist}}\" has been added to the queue. ({{songs}} songs)",
-    "forbidden": "I am forbidden to play that song, will try to play some other song that matches"
+    "cmdDesc": "Jouez de la musique sur le canal.\nVous devez rejoindre un canal vocal avant d'utiliser cette commande.",
+    "usage": "[titre de chanson]",
+    "cantJoin": "Impossible de rejoindre votre canal vocal !",
+    "voiceNotJoined": "❌ Veuillez rejoindre un canal vocal avant d'utiliser cette commande",
+    "missingSongName": "Vous ne m'avez pas fourni le nom de la chanson pour commencer à jouer",
+    "voiceChanDiff": "Veuillez rejoindre le même canal vocal dans lequel se trouve le bot",
+    "playlistStart": "Lancer la liste de lecture **{{playlistTitle}}**.\nLecture du premier morceau, **{{songName}}**! :musical_note:",
+    "botDisconnected": "La musique a été arrêtée car j'ai été déconnecté du canal vocal.",
+    "noResults": "Le bot ne trouve aucune chanson comme celle-ci :cry: [Remarque : Désormais, nous ne prenons en charge que Spotify]",
+    "queueEnd": "La file d'attente est terminée. Plus de musique à jouer :musical_note:...",
+    "queueAddCount": "{{songCount}} chansons ajoutées à la file d'attente!",
+    "queueAdded": "Ajouté à la file d'attente",
+    "details": "Source: {{source}}\n🔗 Lien: {{link}}\n👀 Vus: {{views}}\nDurée: {{duration}}\nProgression: {{progress}}",
+    "errorOccurred": "Une erreur s'est produite... Code : `{{error}}`",
+    "starting": "Commencer à jouer",
+    "rateLimited": "Désolé, je ne peux pas lire la chanson car mon débit est limité",
+    "destroyedQueue": "La file d'attente a été détruite, et je ne peux pas jouer de musique en utilisant cette file d'attente. Veuillez créer une nouvelle file d'attente à partir de la commande de lecture",
+    "playlistAdded": "Playlist \"{{playlist}}\" a été ajouté à la file d'attente. ({{songs}} sons)",
+    "forbidden": "Il m'est interdit de jouer cette chanson, je vais essayer de jouer une autre chanson qui correspond"
   },
   "seek": {
-    "cmdDesc": "Go forward or backward a specific amount of time in the current song!!",
-    "usage": "[time]",
-    "invalidTime": "You must specify a valid number of time!",
-    "success": "▶️ Music sought successfully!"
+    "cmdDesc": "Avancez ou reculez d'un certain laps de temps dans la chanson en cours !",
+    "usage": "[temp]",
+    "invalidTime": "Vous devez spécifier un nombre de fois valide !",
+    "success": "▶️ Musique recherchée avec succès !"
   },
   "skip": {
-    "cmdDesc": "Skip the current song",
-    "pleaseVote": "More than half members in the voice channel must react with 👍 to skip the music! {{count}} more votes are required.",
-    "success": "Skipped the current song",
-    "failure": "An error occurred, When skiping the current song."
+    "cmdDesc": "Ignorer la chanson en cours",
+    "pleaseVote": "Plus de la moitié des membres du canal vocal doivent réagir avec 👍 pour sauter la musique ! {{count}} votes supplémentaires sont requis.",
+    "success": "Ignoré la chanson en cours",
+    "failure": "Une erreur s'est produite lors du saut de la chanson en cours."
   },
   "stop": {
-    "cmdDesc": "Stop the music",
-    "notPlaying": "No songs are currently playing in this server.",
-    "success": "Music stopped!",
-    "pleaseVote": "More than half members in the voice channel must react with 👍 to stop the music! {{count}} more votes are required."
+    "cmdDesc": "Arrêtez la musique",
+    "notPlaying": "Aucune chanson n'est actuellement en cours de lecture sur ce serveur.",
+    "success": "Musique arrêtée !",
+    "pleaseVote": "Plus de la moitié des membres du canal vocal doivent réagir avec 👍 pour arrêter la musique ! {{count}} votes supplémentaires sont requis."
   },
   "volume": {
-    "cmdDesc": "Adjust the volume of the music",
+    "cmdDesc": "Réglez le volume de la musique",
     "usage": "(0-200)",
-    "current": "Current volume is **{{volume}}**%!",
-    "success": "Volume adjusted to {{volume}}"
+    "current": "Le volume actuel est **{{volume}}**%!",
+    "success": "Volume ajusté à {{volume}}"
   }
 }
