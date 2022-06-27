@@ -72,7 +72,7 @@ module.exports = class CMD extends Command {
         });
         embed.addField(
             `**${t("misc:features")}**`,
-            `・${features.join("\n・")}`
+            `> ${features.join("\n・")}`
         );
         const content = message.guild.id;
         switch (args[0]) {
