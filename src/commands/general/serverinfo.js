@@ -40,45 +40,45 @@ module.exports = class CMD extends Command {
             .addField("Icon URL:", `[${iconURL}](${message.guild.iconURL()})`)
             .addField(
                 `**${t("categories:general")}**`,
-                `> ${t("misc:channels")}: ${
+                `・${t("misc:channels")}: ${
                     message.guild.channels.cache.size
                 }\n` +
-                    `> ${t("misc:bots")}: ${
+                    `・${t("misc:bots")}: ${
                         message.guild.members.cache.filter((m) => m.user.bot)
                             .size
                     }\n` +
-                    `> ${t("misc:members")}: ${
+                    `・${t("misc:members")}: ${
                         message.guild.members.cache.filter((m) => !m.user.bot)
                             .size
                     }\n` +
-                    `> ${t("misc:total")} ${t("misc:members")}: ${
+                    `・${t("misc:total")} ${t("misc:members")}: ${
                         message.guild.memberCount
                     }`
             )
             .addField(
                 `**${t("misc:stats")}**`,
-                `> ${t("misc:exiSince")}: ${guild.createdAt}\n` +
-                    `> ${t("misc:lang")}: ${
+                `・${t("misc:exiSince")}: ${guild.createdAt}\n` +
+                    `・${t("misc:lang")}: ${
                         guild.preferredLocale ?? "none"
                     }\n` +
-                    `> ${t("misc:verificationLevel")}: ${
+                    `・${t("misc:verificationLevel")}: ${
                         guild.verificationLevel
                     }`
             );
         const features = [];
         guild.features.forEach((f) => {
             const trans = t(`features:${f}`);
-            features.push(`> ${trans}`);
+            features.push(`・${trans}`);
         });
         embed.addField(
             `**${t("misc:features")}**`,
-            `> ${features.join("\n> ")}`
+            `・${features.join("\n・")}`
         );
         const content = message.guild.id;
         switch (args[0]) {
             case "--dm":
                 message.author.send({ content, embeds: [embed] });
-                message.channel.send(`Check out your DMs, ${message.author}`);
+                message.channel.send(`Regarde tes messages privée, ${message.author}`);
                 break;
             default:
                 message.channel.send({ content, embeds: [embed] });
