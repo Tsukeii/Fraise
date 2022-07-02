@@ -1,8 +1,3 @@
-/**
- * Discord Welcome-Bot
- * Copyright (c) 2021 The Welcome-Bot Team and Contributors
- * Licensed under Lesser General Public License v2.1 (LGPl-2.1 - https://opensource.org/licenses/lgpl-2.1.php)
- */
 //eslint-disable-next-line no-unused-vars
 const { Embed, Command } = require("../../classes");
 const moment = require("moment");
@@ -66,9 +61,9 @@ module.exports = class CMD extends Command {
             .setDescription(`${this.client.application.description}`)
             .addField(
                 `:pencil: __${t("categories:general")}__`,
-                `> ${t("misc:servers")}: ${counts.totalGuilds} serveurs\n` +
-                    `> Utisilateurs: ${counts.totalMembers} utilisateurs\n` +
-                    `> ${t("misc:channels")}: ${
+                `<:statistiques:992932546205720738> ${t("misc:servers")}: ${counts.totalGuilds} serveurs\n` +
+                    `<:statistiques:992932546205720738> Utisilateurs: ${counts.totalMembers} utilisateurs\n` +
+                    `<:statistiques:992932546205720738> ${t("misc:channels")}: ${
                         message.client.channels.cache.size
                     } channels\n` +
                     `> Version: ${message.client.package.version}\n` +
@@ -93,7 +88,7 @@ module.exports = class CMD extends Command {
             embed
                 .addField(
                     `${message.client.customEmojis.owner} Propriétaire & Staff`,
-                    `**Propriétaire:** ${this.client.ownersTags.join(
+                    `<:couronne:992932264394641470> **Propriétaire:** ${this.client.ownersTags.join(
                         ", "
                     )}\n**Équipe Straw:** ${this.client.staffTags.join(
                         ", "
@@ -101,14 +96,14 @@ module.exports = class CMD extends Command {
                 )
                 .addField(
                     "<:vote:992935147169120376> Voter pour Straw:",
-                    "> [top.gg](https://top.gg/bot/855107430693077033/vote)\n",
+                    "<:lien:992935195353292810> [top.gg](https://top.gg/bot/855107430693077033/vote)\n",
                     inline
                 );
         }
         embed
             .addField(
                 "<:lien:992935195353292810> Liens Utiles:",
-                `> [Serveur Communautaire](${message.client.config.supportGuildInvite})\n`,
+                `<:lien:992935195353292810> [Serveur Communautaire](${message.client.config.supportGuildInvite})\n`,
                 inline
             )
             .setImage(
