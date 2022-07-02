@@ -101,7 +101,7 @@ module.exports = class CMD extends Command {
                 )
                 .addField(
                     "<:vote:992935147169120376> Voter pour Straw:",
-                    "> [top.gg](https://top.gg/bot/848459799783669790)\n",
+                    "> [top.gg](https://top.gg/bot/855107430693077033/vote)\n",
                     inline
                 );
         }
