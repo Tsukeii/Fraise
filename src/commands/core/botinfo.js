@@ -66,13 +66,13 @@ module.exports = class CMD extends Command {
             .setDescription(`${this.client.application.description}`)
             .addField(
                 `:pencil: __${t("categories:general")}__`,
-                `> ${t("misc:servers")}: ${counts.totalGuilds} servers\n` +
-                    `> Users: ${counts.totalMembers} users\n` +
+                `> ${t("misc:servers")}: ${counts.totalGuilds} serveurs\n` +
+                    `> Utisilateurs: ${counts.totalMembers} utilisateurs\n` +
                     `> ${t("misc:channels")}: ${
                         message.client.channels.cache.size
                     } channels\n` +
                     `> Version: ${message.client.package.version}\n` +
-                    `> Commands: ${message.client.commands.enabled.size} commands\n` +
+                    `> Commandes: ${message.client.commands.enabled.size} commandes\n` +
                     `> ${message.client.customEmojis.online} ${t(
                         "misc:uptime"
                     )}: ${duration}`
@@ -92,23 +92,23 @@ module.exports = class CMD extends Command {
         if (!args[0] || args[0] !== "--short") {
             embed
                 .addField(
-                    `${message.client.customEmojis.owner} Bot owners and staff`,
-                    `**Straw owners:** ${this.client.ownersTags.join(
+                    `${message.client.customEmojis.owner} Propriétaire & Staff`,
+                    `**Propriétaire:** ${this.client.ownersTags.join(
                         ", "
-                    )}\n**Straw staff:** ${this.client.staffTags.join(
+                    )}\n**Équipe Straw:** ${this.client.staffTags.join(
                         ", "
                     )}`
                 )
                 .addField(
-                    "🧾 Voter pour Straw:",
+                    "<:vote:992935147169120376> Voter pour Straw:",
                     "> [top.gg](https://top.gg/bot/848459799783669790)\n",
                     inline
                 );
         }
         embed
             .addField(
-                "🔗 Liens Utiles:",
-                `> [Support server](${message.client.config.supportGuildInvite})\n`,
+                "<:lien:992935195353292810> Liens Utiles:",
+                `> [Serveur Communautaire](${message.client.config.supportGuildInvite})\n`,
                 inline
             )
             .setImage(
@@ -117,7 +117,7 @@ module.exports = class CMD extends Command {
         switch (args[0]) {
             case "--dm":
                 message.author.send({ embeds: [embed] });
-                message.reply(`Check out your DMs, ${message.author}`);
+                message.reply(`Regarde tes messages privée, ${message.author}`);
                 break;
             default:
                 message.reply({ embeds: [embed] });
