@@ -1,6 +1,4 @@
-/**
- * Discord Welcome-Bot
- require("dotenv").config();
+require("dotenv").config();
 //const { Permissions } = require("discord.js");
 const defaultPerms = require("./data/defaultPerms");
 module.exports = {
