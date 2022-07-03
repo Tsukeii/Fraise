@@ -1,9 +1,6 @@
 /**
  * Discord Welcome-Bot
- * Copyright (c) 2021 The Welcome-Bot Team and Contributors
- * Licensed under Lesser General Public License v2.1 (LGPl-2.1 - https://opensource.org/licenses/lgpl-2.1.php)
- */
-require("dotenv").config();
+ require("dotenv").config();
 //const { Permissions } = require("discord.js");
 const defaultPerms = require("./data/defaultPerms");
 module.exports = {
@@ -35,7 +32,7 @@ module.exports = {
         enabled: process.env.SESS_SECRET ?? null ? true : false,
         logs: "855331801635749888",
     },
-    site: "https://welcome-bot.github.io/",
+    site: "https://fraise-production.up.railway.app/",
     invite: (client) => {
         return client.generateInvite({
             scopes: ["bot", "applications.commands"],
