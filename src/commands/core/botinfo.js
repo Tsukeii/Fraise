@@ -60,7 +60,7 @@ module.exports = class CMD extends Command {
             )
             .setDescription(`${this.client.application.description}`)
             .addField(
-                `:pencil: __${t("categories:general")}__`,
+                `<:informations:992944832223907940> ${t("categories:general")}`,
                 `<:statistiques:992932546205720738> ${t("misc:servers")}: ${counts.totalGuilds} serveurs\n` +
                     `<:statistiques:992932546205720738> Utisilateurs: ${counts.totalMembers} utilisateurs\n` +
                     `<:statistiques:992932546205720738> ${t("misc:channels")}: ${
@@ -73,10 +73,10 @@ module.exports = class CMD extends Command {
                     )}: ${duration}`
             )
             .addField(
-                `:gear: __${t("misc:system")}__`,
-                `> ${message.client.customEmojis.nodejs} Node: ${process.version}\n` +
-                    `> ${message.client.customEmojis.djs} Discord.js: v${version}\n` +
-                    `> ${message.client.customEmojis.ram} ${t(
+                `<:informations:992944832223907940> ${t("misc:system")}`,
+                `${message.client.customEmojis.nodejs} Node: ${process.version}\n` +
+                    `${message.client.customEmojis.djs} Discord.js: v${version}\n` +
+                    `${message.client.customEmojis.ram} ${t(
                         "misc:ram_used"
                     )}: \`${(
                         process.memoryUsage().heapUsed /
@@ -87,10 +87,10 @@ module.exports = class CMD extends Command {
         if (!args[0] || args[0] !== "--short") {
             embed
                 .addField(
-                    `${message.client.customEmojis.owner} Propriétaire & Staff`,
+                    `<:informations:992944832223907940> Propriétaire & Staff`,
                     `<:couronne:992932264394641470> **Propriétaire:** ${this.client.ownersTags.join(
                         ", "
-                    )}\n**Équipe Straw:** ${this.client.staffTags.join(
+                    )}\n<:devellopers:992932464588755034> **Équipe Straw:** ${this.client.staffTags.join(
                         ", "
                     )}`
                 )
@@ -102,7 +102,7 @@ module.exports = class CMD extends Command {
         }
         embed
             .addField(
-                "<:lien:992935195353292810> Liens Utiles:",
+                "<:informations:992944832223907940> Liens Utiles:",
                 `<:lien:992935195353292810> [Serveur Communautaire](${message.client.config.supportGuildInvite})\n`,
                 inline
             )
