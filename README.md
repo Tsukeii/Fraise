@@ -1,2 +1,2 @@
-## Straw
-* Bot multi-fonctions
+## 🍓 Présantion
+* Straw est un bot de Moderation, musique, automation, amusement et encore plus à decouvrire.
