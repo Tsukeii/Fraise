@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Bienvenue sur la page du bot
 
 You can use the [editor on GitHub](https://github.com/Tsukeii/Fraise/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
