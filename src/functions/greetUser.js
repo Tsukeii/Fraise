@@ -50,3 +50,4 @@ module.exports = async (member) => {
         .send({ content: `${member.user}`, embeds: [embed] })
         .catch(() => {});
     return sent;
+};
