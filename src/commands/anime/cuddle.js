@@ -1,8 +1,3 @@
-/**
- * Discord Welcome-Bot
- * Copyright (c) 2021 The Welcome-Bot Team and Contributors
- * Licensed under Lesser General Public License v2.1 (LGPl-2.1 - https://opensource.org/licenses/lgpl-2.1.php)
- */
 const fetch = require("node-fetch");
 const { userFromMention } = require("../../helpers/Util.js");
 const { Embed, Command } = require("../../classes");
@@ -25,7 +20,7 @@ module.exports = class CMD extends Command {
     }
 
     async execute({ message, args }, t) {
-        let res = await fetch("https://nekos.life/api/v2/img/cuddle");
+        let res = await fetch("http://api.nekos.fun:8080/api/cuddle");
         res = await res.json();
         let user;
         if (args[0]) {
