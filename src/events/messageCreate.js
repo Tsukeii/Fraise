@@ -1,8 +1,3 @@
-/**
- * Discord Welcome-Bot
- * Copyright (c) 2021 The Welcome-Bot Team and Contributors
- * Licensed under Lesser General Public License v2.1 (LGPl-2.1 - https://opensource.org/licenses/lgpl-2.1.php)
- */
 const formatChat = require("../functions/formatChat");
 module.exports = {
     name: "messageCreate",
@@ -82,13 +77,13 @@ module.exports = {
         if (message.content.split(" ").length > 1) return;
 
         if (!mentionRegex.test(message.content)) return;
-        let reply = `Hi there, ${
+        let reply = `Salut, ${
             message.author
-        }\nI am Straw\nMy prefix is "${guildDB.prefix}"${
-            message.guild ? " in this server." : ""
-        }\nSend \`${guildDB.prefix}help\` to get help`;
+        }\nJe suis Fraise\nMon prefix est "${guildDB.prefix}"${
+            message.guild ? " sur ce serveur." : ""
+        }\nEnvoie \`${guildDB.prefix}help\` pour afficher le message d'aide`;
         if (message.guild) {
-            reply += `\nSend \`${guildDB.prefix}follow #channel\` where #channel is the channel you want to receive updates.`;
+            reply += `\Envoie \`${guildDB.prefix}follow #salon\` où #salon est le salon sur lequel vous souhaitez recevoir les mises à jour.`;
         }
         if (!message.reference) {
             message.channel.sendTyping().catch(() => {});
