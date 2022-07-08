@@ -5,7 +5,7 @@ module.exports = class CMD extends Command {
     constructor(client) {
         super(
             {
-                name: "pat",
+                name: "tickle",
                 memberPerms: [],
                 botPerms: [],
                 requirements: {
@@ -50,7 +50,7 @@ module.exports = class CMD extends Command {
                     user: user.tag,
                 })
             )
-            .setImage(res.url)
+            .setImage(res.image)
             .setColor("RANDOM");
         message.reply({ embeds: [embed] });
     }
