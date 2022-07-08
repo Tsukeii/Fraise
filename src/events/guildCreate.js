@@ -13,7 +13,7 @@ module.exports = {
         await client.db.findOrCreateGuild(guild.id, lang);
         if (guild.systemChannelId) {
             const channel = await guild.channels.fetch(guild?.systemChannelId);
-            const content = `Thank you for choosing this bot! To get started, type \`${client.config.defaultPrefix}help\`\nJoin the support server: ${client.config.supportGuildInvite}`;
+            const content = `Merci à vous d'avoir choisis Fraise! pour commencer, tape \`${client.config.defaultPrefix}help\`\nServeur communautaire: ${client.config.supportGuildInvite}`;
             if (channel) {
                 channel.send(content).catch(() => {
                     guild.channels.cache
@@ -30,13 +30,13 @@ module.exports = {
         }
         const bots = guild.members.cache.filter((m) => m.user.bot).size;
         const embed = new Embed({ color: "success", timestamp: true })
-            .setTitle(`:white_check_mark: Added to "${guild.name}"`)
+            .setTitle(`:white_check_mark: Ajouter à "${guild.name}"`)
             .setDescription(`${guild.id}`)
             .addField(
                 "Info",
                 `Shard: ${guild.shardId}\nOwner: <@${
                     guild.ownerId
-                }>\nMembers: ${guild.memberCount}\nHumams: ${Math.round(
+                }>\nMembres: ${guild.memberCount}\nHumains: ${Math.round(
                     (bots / guild.memberCount) * 100
                 )}%`
             );
