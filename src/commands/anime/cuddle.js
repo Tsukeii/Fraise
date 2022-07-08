@@ -50,7 +50,7 @@ module.exports = class CMD extends Command {
                     user: user.tag,
                 })
             )
-            .setImage(res.url);
+            .setImage(res.image);
         message.reply({ embeds: [embed] });
     }
 };
