@@ -60,14 +60,14 @@ module.exports = class CMD extends Command {
                 );
             });
             pages[0].setDescription(t("cmds:help.all"));
-            pages[0].addField("Nombres de Commandes", `${commands.size}`);
-            pages[0].addField("Nombres de categories", `${categories.length}`);
+            pages[0].addField("<:list:994786095525007472> Nombres de Commandes", `${commands.size}`);
+            pages[0].addField("<:list:994786095525007472> Nombres de categories", `${categories.length}`);
             pages[0].addField(
-                "Obtenir de l'aide pour une commande spécifique :",
-                `Tapez \`${guildDB.prefix}help (command name)\` pour obtenir des informations sur une commande spécifique !`
+                "<:aide:994783486252679230> Obtenir de l'aide pour une commande spécifique :",
+                `<:tags:994786025593376928> Tapez \`${guildDB.prefix}help (command name)\` pour obtenir des informations sur une commande spécifique !`
             );
             pages[0].addField(
-                "Commands",
+                "<:label:994785987995648123> Commands",
                 `${t("cmds:help.cmds", { prefix: guildDB.prefix })}`
             );
             const pagination = new Pagination(this.client, {
@@ -143,17 +143,17 @@ module.exports = class CMD extends Command {
                         `\`${command.subcommands[i].name}\` - ${command.subcommands[i].desc}`
                     );
                 }
-                pages[0].addField("Subcommands", subcommands.join(`\n`));
+                pages[0].addField("<:aide:994783486252679230> Sous-commandes", subcommands.join(`\n`));
             }
             if (command.usage)
                 pages[0].addField(
-                    "Usage",
+                    "<:usage:994788388353888326> Usage",
                     `\`\`\`\n${guildDB.prefix}${command.name} ${command.usage}\n\`\`\`` +
                         `\n${t("misc:usageKey")}`
                 );
 
             pages[0].addField(
-                "Cooldown:",
+                "<:time:994786045688299660> Cooldown:",
                 `${command.cooldown || 3} seconde(s)`
             );
         } else if (category) {
@@ -165,7 +165,7 @@ module.exports = class CMD extends Command {
                     );
             });
             pages[0].addField(
-                "Commandes dans la categorie",
+                "<:task:994787466227765288> Commandes dans la categorie",
                 `\`\`\`\n• ${commandsInCat.join("\n• ")}\n\`\`\``
             );
         }
