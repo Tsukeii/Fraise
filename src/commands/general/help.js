@@ -44,7 +44,7 @@ module.exports = class CMD extends Command {
                 commands.forEach((command) => {
                     if (command.category === cat.name)
                         commandsCat.push(
-                            `<:fleche:997090040687640647> ${command.name}\n<:info:997091224928395334> ${t(
+                            `> <:fleche:997090040687640647> **${command.name}**\n> <:info:997091224928395334> ${t(
                                 `cmds:${command.name}.cmdDesc`
                             )}`
                         );
