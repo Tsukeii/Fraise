@@ -78,7 +78,7 @@ module.exports = class CMD extends Command {
         } else if (args[0] && args[0] === "--list-categories") {
             const cats = [];
             categories.forEach((cat) => {
-                cats.push(`${t(categories:${cat.key})}`);
+                cats.push(`${t(`categories:${cat.key}`)}`);
             });
             return message.reply({
                 embeds: [
@@ -161,7 +161,7 @@ module.exports = class CMD extends Command {
             });
             pages[0].addField(
                 "Commandes dans la categorie",
-                `\`\`\`\n• ${commandsInCat.join("\n• ")}\n\`\`\``
+                `\n• ${commandsInCat.join("\n• ")}`
             );
         }
 
