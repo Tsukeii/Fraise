@@ -83,9 +83,9 @@ module.exports = class CMD extends Command {
             return message.reply({
                 embeds: [
                     pages[0].setDesc(
-                        `${t("cmds:help.listcats")}\`\`\`\n• ${cats.join(
+                        `${t("cmds:help.listcats")}\n• ${cats.join(
                             "\n• "
-                        )}\n\`\`\``
+                        )}\n\`
                     ),
                 ],
             });
