@@ -1,20 +1,15 @@
-/**
- * Discord Welcome-Bot
- * Copyright (c) 2021 The Welcome-Bot Team and Contributors
- * Licensed under Lesser General Public License v2.1 (LGPl-2.1 - https://opensource.org/licenses/lgpl-2.1.php)
- */
 require("dotenv").config();
-const WelcomeBot = require("./WelcomeBot");
+const Straw = require("./Straw");
 const { Embed } = require("./classes");
 
-const client = new WelcomeBot({
+const client = new Straw({
     debug: process.env.NODE_ENV === "development",
 });
 
 require("./db/connection");
 const dbAuditor = require("./db/functions/dbAuditor");
 
-process.env.userAgent = "Discord Welcome-Bot " + client.package.version;
+process.env.userAgent = "Discord Straw " + client.package.version;
 process.on("unhandledRejection", (error) => {
     if (
         error.toString().indexOf("No guild with guild ID") !== -1 &&
