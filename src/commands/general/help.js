@@ -85,7 +85,7 @@ module.exports = class CMD extends Command {
                     pages[0].setDesc(
                         `${t("cmds:help.listcats")}\n• ${cats.join(
                             "\n• "
-                        )}\n\`
+                        )}\n`
                     ),
                 ],
             });
