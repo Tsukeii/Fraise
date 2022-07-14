@@ -44,7 +44,7 @@ module.exports = class CMD extends Command {
                 commands.forEach((command) => {
                     if (command.category === cat.name)
                         commandsCat.push(
-                            `> 🍓 **${command.name}**\n> 🎒 ${t(
+                            `**${command.name}**, ${t(
                                 `cmds:${command.name}.cmdDesc`
                             )}`
                         );
