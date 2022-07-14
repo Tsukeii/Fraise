@@ -1,12 +1,7 @@
-/**
- * Discord Welcome-Bot
- * Copyright (c) 2021 The Welcome-Bot Team and Contributors
- * Licensed under Lesser General Public License v2.1 (LGPl-2.1 - https://opensource.org/licenses/lgpl-2.1.php)
- */
 /* eslint-disable no-undef */
 process.env.TEST_MODE = true;
-const WelcomeBot = require("../WelcomeBot");
-const client = new WelcomeBot();
+const Straw = require("../Straw");
+const client = new Straw();
 //findArrDups is took from https://flexiple.com/find-duplicates-javascript-array/
 const findArrDups = (array) => {
     //find duplicates in an array
