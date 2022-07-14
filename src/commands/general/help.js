@@ -51,7 +51,7 @@ module.exports = class CMD extends Command {
                 });
                 pages[p].addField(
                     `${cat.emoji} ${t("cmds:help.in_cat")}`,
-                    `\`\`\`\n${commandsCat.join("\n")}\n\`\`\``
+                    `\n${commandsCat.join("\n")}\n`
                 );
             });
             pages[0].setDescription(t("cmds:help.all"));
