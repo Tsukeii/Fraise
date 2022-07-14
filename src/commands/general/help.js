@@ -44,7 +44,7 @@ module.exports = class CMD extends Command {
                 commands.forEach((command) => {
                     if (command.category === cat.name)
                         commandsCat.push(
-                            `**${command.name}**, ${t(
+                            `・**${command.name}** - ${t(
                                 `cmds:${command.name}.cmdDesc`
                             )}`
                         );
@@ -83,8 +83,8 @@ module.exports = class CMD extends Command {
             return message.reply({
                 embeds: [
                     pages[0].setDesc(
-                        `${t("cmds:help.listcats")}\n• ${cats.join(
-                            "\n• "
+                        `${t("cmds:help.listcats")}\n・ ${cats.join(
+                            "\n・ "
                         )}\n`
                     ),
                 ],
