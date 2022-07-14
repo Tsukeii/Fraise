@@ -1,8 +1,3 @@
-/**
- * Discord Welcome-Bot
- * Copyright (c) 2021 The Welcome-Bot Team and Contributors
- * Licensed under Lesser General Public License v2.1 (LGPl-2.1 - https://opensource.org/licenses/lgpl-2.1.php)
- */
 const fs = require("fs");
 const { Client, Collection, Intents, Options } = require("discord.js");
 const config = require("./config");
@@ -34,7 +29,7 @@ class WelcomeBot extends Client {
         this.initialized = false;
         this.config = config;
         this.logger = new Logger();
-        this.username = "Welcome-Bot";
+        this.username = "Straw";
         this.db = new DBCache(this);
         this.guildSchema = require("./schema/guildSchema");
         //this.versionSchema = require("./schema/versionSchema");
@@ -167,4 +162,4 @@ class WelcomeBot extends Client {
     }
 }
 
-module.exports = WelcomeBot;
+module.exports = Straw;
