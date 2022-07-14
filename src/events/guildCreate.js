@@ -29,7 +29,7 @@ module.exports = {
             .setDescription(`${guild.id}`)
             .addField(
                 "Info",
-                `Shard: ${guild.shardId}\nOwner: <@${
+                `Shard: ${guild.shardId}\nCréer par: <@${
                     guild.ownerId
                 }>\nMembres: ${guild.memberCount}\nHumains: ${Math.round(
                     (bots / guild.memberCount) * 100
