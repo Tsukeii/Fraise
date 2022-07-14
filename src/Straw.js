@@ -7,7 +7,7 @@ const Logger = require("colors-logger");
 const { Player } = require("discord-player");
 const DBCache = require("./db/DBCache");
 
-class WelcomeBot extends Client {
+class Straw extends Client {
     constructor(opts) {
         super({
             intents: [
