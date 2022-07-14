@@ -17,25 +17,25 @@ module.exports = async (client) => {
     const channels = client.channels.cache.size;
     const presences = [
         {
-            name: `${servers} server${servers > 1 ? "s" : ""} | ${
+            name: `${servers} serveur${servers > 1 ? "s" : ""} | ${
                 client.config.defaultPrefix
             }help`,
             type: "WATCHING",
         },
         {
-            name: `${commands} command${commands > 1 ? "s" : ""} | ${
+            name: `${commands} commande${commands > 1 ? "s" : ""} | ${
                 client.config.defaultPrefix
             }help`,
             type: "PLAYING",
         },
         {
-            name: `${channels} channel${channels > 1 ? "s" : ""} | ${
+            name: `${channels} salon${channels > 1 ? "s" : ""} | ${
                 client.config.defaultPrefix
             }help`,
             type: "LISTENING",
         },
         {
-            name: `${users} user${users > 1 ? "s" : ""} | ${
+            name: `${users} utilisateur${users > 1 ? "s" : ""} | ${
                 client.config.defaultPrefix
             }help`,
             type: "WATCHING",
@@ -43,6 +43,10 @@ module.exports = async (client) => {
         {
             name: `${client.user.username} v${client.package.version} | ${client.config.defaultPrefix}help`,
             type: "PLAYING",
+        },
+        {   
+            name: `discord.gg/fraise`,
+            type: "WATCHING",
         },
     ];
     client.user.setPresence({
