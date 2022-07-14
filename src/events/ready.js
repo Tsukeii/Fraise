@@ -11,7 +11,7 @@ module.exports = {
         // We logged in
         if (client.debug)
             client.logger.log(
-                `${client.user.tag}, ready to serve ${client.users.cache.size} users in ${client.guilds.cache.size} servers.`
+                `${client.user.tag}, Prête à servir ${client.users.cache.size} utilisateur sur ${client.guilds.cache.size} serveurs.`
             );
         const { CronJob } = require("cron");
         const job = new CronJob(
@@ -33,7 +33,7 @@ module.exports = {
                     client.channels.cache
                         .get(client.config.channels.general)
                         .send(
-                            `Hey ${m}! Gentle reminder for voting! Use vote command`
+                            `Hey ${m}! Petit rappel pour voter ! Utiliser la commande de vote`
                         );
                 });
             },
@@ -62,6 +62,6 @@ module.exports = {
         require("../functions/versionSender")(client);
         if (process.env.NODE_ENV !== "production")
             require("../helpers/updateDocs")(client);
-        client.logger.log(`Straw v${client.package.version} started!`);
+        client.logger.log(`Straw v${client.package.version} demarée!`);
     },
 };
