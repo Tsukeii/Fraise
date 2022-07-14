@@ -1,8 +1,3 @@
-/**
- * Discord Welcome-Bot
- * Copyright (c) 2021 The Welcome-Bot Team and Contributors
- * Licensed under Lesser General Public License v2.1 (LGPl-2.1 - https://opensource.org/licenses/lgpl-2.1.php)
- */
 const createOptionHandler = require("../functions/createOptionHandler");
 const { userFromMention } = require("../helpers/Util.js");
 const { Permissions, Collection } = require("discord.js");
@@ -181,13 +176,13 @@ module.exports = class Command {
 
             if (!botPerms) {
                 message.reply(
-                    `${t("errors:iDontHavePermShort")}\nType \`${
+                    `${t("errors:iDontHavePermShort")}\nTape \`${
                         guildDB.prefix
                     }help ${
                         this.name
-                    }\` to get list of permissions required by this command.\nDon't know what you have given already? Type \`${
+                    }\` pour obtenir la liste des autorisations requises par cette commande.\nVous ne savez pas déjà ce que vous avez donné ? Taper \`${
                         guildDB.prefix
-                    }botperms\` in this channel itself.`
+                    }botperms\` dans ce salon lui-même.`
                 );
                 return false;
             }
